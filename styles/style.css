@@ -1,0 +1,80 @@
+.title-area {
+	display: flex;
+	justify-content: space-between;
+	margin: 20px auto 20px auto;
+}
+.title{
+	width: 60%;
+	padding: 10px;
+	font-weight: bold;
+}
+#years-title, #year-title{
+	display: none;
+}
+.show-date, .show-month, .show-years {
+	display: block;
+}
+.title:hover {	
+	background: #eeeeee;
+	cursor: pointer;
+}
+.calendar{
+	width:300px;
+	padding: 10px;
+	height:fit-content;
+	border: black 1px solid;
+	text-align: center;
+}
+.body-list{
+	font-family:arial;
+    font-size:14px;
+    font-weight: bold;
+	display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.date-list div{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	line-height: 40px;
+}
+.months-list div{
+	width:100%;
+	font-family:arial;
+    font-size:14px;
+    font-weight: bold;
+    display: contents;
+}
+.months-list div{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr ;
+	line-height: 75px;
+}
+
+.not-this-period {
+	color : #eeeeee
+}
+.yearss-list div{
+	width:100%;
+	font-family:arial;
+    font-size:14px;
+    font-weight: bold;
+    display: contents;
+}
+.years-list div{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr ;
+	line-height: 75px;
+}
+.today {
+    color: white;
+    background: red;
+    border-radius: 50px;
+}
+.select {
+    color: white;
+    background: red;
+    border-radius: 50px;
+}
+img {
+	width: 10%;
+}

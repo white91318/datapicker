@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>Document</title>
+    <script
+  src="https://code.jquery.com/jquery-3.5.1.js"
+  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous"></script>
+  <script src="https://www.w3schools.com/lib/w3.js"></script>
+  <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+    <input type="text" onfocus="$('.calendar').load('test.html')">
+    
+    <div class="calendar">
+        <div class="title-area">
+          <img src="./assets/prev.png" id="prev" class="normal" alt="">
+          <div class="title" id="normal-title">Month+year</div>
+          <div class="title" id="year-title">year</div>
+          <div class="title" id="years-title">year - year</div>
+          <img src="./assets/next.png" id="next" class="normal" alt="">
+        </div>
+        <!-- Date area -->
+        <div class="show-date">
+          <div class="lightgrey body-list">
+                <span>Su</span>
+                <span>Mo</span>
+                <span>Tu</span>
+                <span>We</span>
+                <span>Th</span>
+                <span>Fr</span>
+                <span>Sa</span>
+          </div>
+          <div class="darkgrey date-list" id="days">
+          </div>
+        </div>
+        <!-- Month area -->
+        <div class="show-month">
+            <div class="lightgrey months-list" id="months"></div>
+        </div>
+        <!-- Year area -->
+        <div class="show-years">
+            <div class="lightgrey years-list" id="years"></div>
+        </div>
+    </div>
+</body>
+</html>
+<script src="./js/datepicker.js"> </script>
+
