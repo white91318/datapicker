@@ -1,7 +1,18 @@
+#date-input {
+	background-image: url('../assets/calendar.png');
+	background-repeat: no-repeat;
+	background-size: contain;
+	padding-left: 18px;
+
+}
+.calendar {
+	display: none;
+}
 .title-area {
 	display: flex;
 	justify-content: space-between;
 	margin: 20px auto 20px auto;
+	position: relative;
 }
 .title{
 	width: 60%;
@@ -38,28 +49,16 @@
 	line-height: 40px;
 }
 .months-list div{
-	width:100%;
-	font-family:arial;
-    font-size:14px;
-    font-weight: bold;
-    display: contents;
-}
-.months-list div{
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr ;
 	line-height: 75px;
 }
 
+
 .not-this-period {
 	color : #eeeeee
 }
-.yearss-list div{
-	width:100%;
-	font-family:arial;
-    font-size:14px;
-    font-weight: bold;
-    display: contents;
-}
+
 .years-list div{
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr ;
@@ -73,7 +72,7 @@
 .select {
     color: white;
     background: red;
-    border-radius: 50px;
+	border-radius: 50px;
 }
 img {
 	width: 10%;

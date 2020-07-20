@@ -63,6 +63,7 @@ function refreshDate(){
             if(date == today.getDate() && today.getMonth() == my_month && today.getFullYear() == my_year) {
                 newDate.setAttribute("class", "today");
             }
+            //newDate.onclick = function(){selectDate(dateInfo)}
             newDate.setAttribute("onclick", "selectDate(\"" + dateInfo+ "\")");
             newRow.appendChild(newDate);
         }
@@ -88,8 +89,8 @@ function showMonth(){
             newMonth.setAttribute("class", "today");
         }
         var dateInfo = get_month.getMonth();
-        newMonth.setAttribute("id",dateInfo)
         newMonth.setAttribute("onclick", "selectDate(\"" + dateInfo+ "\")");
+        newMonth.setAttribute("id",dateInfo)
         newRow.appendChild(newMonth);
     }
     months_holder.appendChild(newRow);
@@ -122,8 +123,8 @@ function showYears(){
             newYear.setAttribute("class","not-this-period")
         }
         var dateInfo = get_year.getFullYear();
-        newYear.setAttribute("id",dateInfo)
         newYear.setAttribute("onclick", "selectDate(\"" + dateInfo+ "\")");
+        newYear.setAttribute("id",dateInfo)
         newRow.appendChild(newYear);
     }
 
@@ -196,7 +197,6 @@ function selectDate(e){
     $('.show-years span').removeClass("select")
     $('.today').css({"color":"red","background":"none"})
     document.getElementById(e).classList.add("select")
-}
-function show() {
-$('.calendar').show("123")
+    $('#date-input').val(new Date(e).getFullYear() + "/" + (new Date(e).getMonth()+1) + "/" + new Date(e).getDate())
+    $('.calendar').hide()
 }

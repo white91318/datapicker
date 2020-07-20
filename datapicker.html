@@ -8,20 +8,19 @@
   src="https://code.jquery.com/jquery-3.5.1.js"
   integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
   crossorigin="anonymous"></script>
-  <script src="https://www.w3schools.com/lib/w3.js"></script>
   <link rel="stylesheet" href="./styles/style.css">
+
 </head>
 
 <body>
-    <input type="text" onfocus="$('.calendar').load('test.html')">
-    
+    <input type="text" id="date-input" onfocus="$('.calendar').show()">
     <div class="calendar">
         <div class="title-area">
-          <img src="./assets/prev.png" id="prev" class="normal" alt="">
+          <img src="./assets/prev.svg" id="prev" class="normal" alt="">
           <div class="title" id="normal-title">Month+year</div>
           <div class="title" id="year-title">year</div>
           <div class="title" id="years-title">year - year</div>
-          <img src="./assets/next.png" id="next" class="normal" alt="">
+          <img src="./assets/next.svg" id="next" class="normal" alt="">
         </div>
         <!-- Date area -->
         <div class="show-date">
@@ -46,7 +45,9 @@
             <div class="lightgrey years-list" id="years"></div>
         </div>
     </div>
+    
 </body>
 </html>
+
 <script src="./js/datepicker.js"> </script>
 
