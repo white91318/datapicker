@@ -1,6 +1,7 @@
 # datapicker
 
-It's only for trendmicro interview
+It's only for trendmicro interview.
+
 Didn't using any existing Calendar or DatePicker components
 
 ### Environment
